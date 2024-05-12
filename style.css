@@ -1,14 +1,16 @@
 /* Custom css file */
-
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sedan+SC&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Sedan SC", serif;
     background-color: #170800d5;
+    color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    /* background: url(img/bg.jpg) no-repeat center center fixed; */
+    background: url(img/bg.jpg) no-repeat center center fixed;
     overflow: hidden;
     background-size: cover;
     /* background-position: center; */
@@ -24,9 +26,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: url(img/bg.jpg) no-repeat center center fixed; */
+    background: url(img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
-    filter: blur(2px); 
+    filter: blur(.8px); 
     z-index: -1;
 }
 
@@ -64,8 +66,11 @@ form {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 24px;
+    text-transform: capitalize;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 30px;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     margin-bottom: 60px;
 }
@@ -74,12 +79,12 @@ label {
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     padding-left: 10px;
 }
 
 input {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(244, 242, 242, 0.062);
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
@@ -87,6 +92,11 @@ input {
     border: none;
     margin-bottom: 20px;
     color: white;
+}
+
+input:focus{
+    background: rgba(23, 51, 1, 0.349);
+    font-size: 14px;
 }
 
 button {
